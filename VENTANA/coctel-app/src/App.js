@@ -28,19 +28,6 @@ function App() {
         }
     }
 
-    //   return (
-    //     <div className="App">
-    //       <form onSubmit={handleSubmit}>
-    //         <label>
-    //           Nombre del coctel:
-    //           <input type="text" value={cocktailName} onChange={(e) => setCocktailName(e.target.value)} />
-    //         </label>
-    //         <button type="submit">Enviar</button>
-    //       </form>
-    //       {message && <p>{message}</p>}
-    //     </div>
-    //   );
-
     return (
         <Fragment>
             <Navbar brand='Cocteles' />
@@ -52,7 +39,8 @@ function App() {
 
                                 <div class='form-group'>
                                     <form onSubmit={handleSubmit}>
-                                        <input type="text" value={cocktailName} onChange={(e) => setCocktailName(e.target.value)} placeholder='Nombre del coctel' class="form-control"></input>
+                                        <input type="text" value={cocktailName} onChange={(e) => setCocktailName(e.target.value)} 
+                                            placeholder='Nombre del coctel' class="form-control"></input>
                                         <br />
                                         <button type='submit' class='btn btn-primary'> Guardar </button>
                                     </form>
